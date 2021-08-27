@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    
+<main>
+    
+    <div class="music">
+        <h1>Music For Dope  🎵 🎼 🎹</h1>
+        <div class="music__filter">
+            <span>Filter Music: </span>
+            <select id="filterOption" onchange="filterMusic(this)">
+                <option>Filter Music</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <div class="music__list"></div>
+    </div>
+
+    <div class="music__app">
+        <div class="music__app-image">
+            <img src="./media/images/default img banner.png" alt="">
+    
+            <div class="music__rythm__animation">
+                <div class="music__app-image__ani music__app-image__ani-1">
+                    <img src="media/images/musical-notes-png-clipart-pic-12.png" />
+                </div>
+                <div class="music__app-image__ani music__app-image__ani-2">
+                    <img src="media/images/0001025-music-logo-maker-online-05.png" />
+                </div>
+                <div class="music__app-image__ani music__app-image__ani-3">
+                    <img src="media/images/1-icon-music-14-512.png" />
+                </div>
+            </div>
+        </div>
+    
+        <div class="music__app__wrapper">
+            
+            <div class="music__app-details">
+                <h1 id="music__app-title"></h1>
+                <p id="music__app-txt"></p>
+            </div>
+            <div class="music__app-status__bar">
+                <div class="music__app-lineAnimation">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <audio src="" id="music"></audio>
+                <div class="music__app-progress__bar" id="progressBar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="music__app-timeline">
+                    <span id="currTime"></span>
+                    <span id="totalTime"></span>
+                </div>
+                <div class="play__pause__status">
+                    <i class="fas fa-play main-button" id="play" title="Play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="./assets/scripts/musicDB.js"></script>
+<script src="./assets/scripts/main.js"></script>
+
+</body>
+</html>
